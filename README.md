@@ -2,7 +2,7 @@
 
 A decentralized identity management toolkit for AI agents using iden3 protocol on Billions Network.
 
-## Overview
+## Overvie
 
 This skill enables AI agents to create, manage, link, prove and verify ownership of decentralized identities (DIDs) using cryptographic signatures.
 
