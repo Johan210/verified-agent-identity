@@ -1,10 +1,10 @@
-name: Verify Human Identity
+name: 'Verify Human Identity
 
 on:
   workflow_dispatch:
-    inputs:
-      agent_name: agent bangjoe
-        description: 'Agent Name'
+    inputs: 20
+      agent_name: 'agent bangjoe'
+        description: 'bangjoe'
         required: true
         default: 'bangjoe
       agent_description:
