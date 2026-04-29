@@ -4,13 +4,13 @@ on:
   workflow_dispatch:
     inputs:
       agent_name:
-        description: 'BanvJoe'
+        description: 'BangJoe'
         required: true
         default: 'gm_bangjoe'
       agent_description:
         description: 'Agent Description'
         required: true
-        default: 'gm_banvjoe AI Agent'
+        default: 'gm_bangjoe AI Agent'
 
 jobs:
   verify:
