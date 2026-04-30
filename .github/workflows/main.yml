@@ -1,16 +1,16 @@
-name: 'Verify Human Identity
+name: Verify Human Identity
 
 on:
   workflow_dispatch:
-    inputs: 20
-      agent_name: 'agent bangjoe'
-        description: 'bangjoe'
+    inputs:
+      agent_name:
+        description: 'Agent Name'
         required: true
-        default: 'bangjoe
+        default: 'gm_bigwin'
       agent_description:
         description: 'Agent Description'
         required: true
-        default: 'bangjoe Agent'
+        default: 'bigwin AI Agent'
 
 jobs:
   verify:
@@ -36,4 +36,4 @@ jobs:
       - name: Step 2 - Link Human to Agent
         run: |
           node scripts/manualLinkHumanToAgent.js \
-          --challenge "{\"bangjoe\": \"${{ github.event.inputs.agent_name }}\", \"description\": \"${{ github.event.inputs.agent_description }}\"}"
+          --challenge "{\"name\": \"${{ github.event.inputs.agent_name }}\", \"description\": \"${{ github.event.inputs.agent_description }}\"}"
